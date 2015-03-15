@@ -16,6 +16,7 @@
 		6F31AEF71AB627AD00A013AC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F31AEF61AB627AD00A013AC /* LoginViewController.swift */; };
 		6F31AEF91AB6285D00A013AC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F31AEF81AB6285D00A013AC /* RegisterViewController.swift */; };
 		6F31AEFB1AB6289400A013AC /* RoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F31AEFA1AB6289400A013AC /* RoomsViewController.swift */; };
+		6F9C083E1AB641EB008A4FBF /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9C083D1AB641EB008A4FBF /* Room.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		6F31AEF61AB627AD00A013AC /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6F31AEF81AB6285D00A013AC /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		6F31AEFA1AB6289400A013AC /* RoomsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomsViewController.swift; sourceTree = "<group>"; };
+		6F9C083D1AB641EB008A4FBF /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,15 +85,16 @@
 		6F31AED31AB606DB00A013AC /* AutoHome iOS Client */ = {
 			isa = PBXGroup;
 			children = (
-				6F31AED61AB606DB00A013AC /* AppDelegate.swift */,
 				6F31AED81AB606DB00A013AC /* ViewController.swift */,
+				6F31AEF61AB627AD00A013AC /* LoginViewController.swift */,
+				6F31AEF81AB6285D00A013AC /* RegisterViewController.swift */,
+				6F31AEFA1AB6289400A013AC /* RoomsViewController.swift */,
+				6F31AED61AB606DB00A013AC /* AppDelegate.swift */,
 				6F31AEDA1AB606DB00A013AC /* Main.storyboard */,
 				6F31AEDD1AB606DB00A013AC /* Images.xcassets */,
 				6F31AEDF1AB606DB00A013AC /* LaunchScreen.xib */,
 				6F31AED41AB606DB00A013AC /* Supporting Files */,
-				6F31AEF61AB627AD00A013AC /* LoginViewController.swift */,
-				6F31AEF81AB6285D00A013AC /* RegisterViewController.swift */,
-				6F31AEFA1AB6289400A013AC /* RoomsViewController.swift */,
+				6F9C083D1AB641EB008A4FBF /* Room.swift */,
 			);
 			path = "AutoHome iOS Client";
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 			files = (
 				6F31AEF71AB627AD00A013AC /* LoginViewController.swift in Sources */,
 				6F31AED91AB606DB00A013AC /* ViewController.swift in Sources */,
+				6F9C083E1AB641EB008A4FBF /* Room.swift in Sources */,
 				6F31AEFB1AB6289400A013AC /* RoomsViewController.swift in Sources */,
 				6F31AED71AB606DB00A013AC /* AppDelegate.swift in Sources */,
 				6F31AEF91AB6285D00A013AC /* RegisterViewController.swift in Sources */,
@@ -419,6 +423,7 @@
 				6F31AEF21AB606DB00A013AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6F31AEF31AB606DB00A013AC /* Build configuration list for PBXNativeTarget "AutoHome iOS ClientTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +432,7 @@
 				6F31AEF51AB606DB00A013AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
