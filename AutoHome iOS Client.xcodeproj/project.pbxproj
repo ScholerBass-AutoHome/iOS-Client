@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F31AED71AB606DB00A013AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F31AED61AB606DB00A013AC /* AppDelegate.swift */; };
+		6F31AED91AB606DB00A013AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F31AED81AB606DB00A013AC /* ViewController.swift */; };
+		6F31AEDC1AB606DB00A013AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F31AEDA1AB606DB00A013AC /* Main.storyboard */; };
+		6F31AEDE1AB606DB00A013AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F31AEDD1AB606DB00A013AC /* Images.xcassets */; };
+		6F31AEE11AB606DB00A013AC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F31AEDF1AB606DB00A013AC /* LaunchScreen.xib */; };
+		6F31AEED1AB606DB00A013AC /* AutoHome_iOS_ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F31AEEC1AB606DB00A013AC /* AutoHome_iOS_ClientTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F31AEE71AB606DB00A013AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F31AEC91AB606DB00A013AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F31AED01AB606DB00A013AC;
+			remoteInfo = "AutoHome iOS Client";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6F31AED11AB606DB00A013AC /* AutoHome iOS Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AutoHome iOS Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F31AED51AB606DB00A013AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F31AED61AB606DB00A013AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6F31AED81AB606DB00A013AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6F31AEDB1AB606DB00A013AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6F31AEDD1AB606DB00A013AC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6F31AEE01AB606DB00A013AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6F31AEE61AB606DB00A013AC /* AutoHome iOS ClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AutoHome iOS ClientTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F31AEEB1AB606DB00A013AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F31AEEC1AB606DB00A013AC /* AutoHome_iOS_ClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoHome_iOS_ClientTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F31AECE1AB606DB00A013AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F31AEE31AB606DB00A013AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F31AEC81AB606DB00A013AC = {
+			isa = PBXGroup;
+			children = (
+				6F31AED31AB606DB00A013AC /* AutoHome iOS Client */,
+				6F31AEE91AB606DB00A013AC /* AutoHome iOS ClientTests */,
+				6F31AED21AB606DB00A013AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6F31AED21AB606DB00A013AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F31AED11AB606DB00A013AC /* AutoHome iOS Client.app */,
+				6F31AEE61AB606DB00A013AC /* AutoHome iOS ClientTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F31AED31AB606DB00A013AC /* AutoHome iOS Client */ = {
+			isa = PBXGroup;
+			children = (
+				6F31AED61AB606DB00A013AC /* AppDelegate.swift */,
+				6F31AED81AB606DB00A013AC /* ViewController.swift */,
+				6F31AEDA1AB606DB00A013AC /* Main.storyboard */,
+				6F31AEDD1AB606DB00A013AC /* Images.xcassets */,
+				6F31AEDF1AB606DB00A013AC /* LaunchScreen.xib */,
+				6F31AED41AB606DB00A013AC /* Supporting Files */,
+			);
+			path = "AutoHome iOS Client";
+			sourceTree = "<group>";
+		};
+		6F31AED41AB606DB00A013AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F31AED51AB606DB00A013AC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6F31AEE91AB606DB00A013AC /* AutoHome iOS ClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				6F31AEEC1AB606DB00A013AC /* AutoHome_iOS_ClientTests.swift */,
+				6F31AEEA1AB606DB00A013AC /* Supporting Files */,
+			);
+			path = "AutoHome iOS ClientTests";
+			sourceTree = "<group>";
+		};
+		6F31AEEA1AB606DB00A013AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F31AEEB1AB606DB00A013AC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F31AED01AB606DB00A013AC /* AutoHome iOS Client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F31AEF01AB606DB00A013AC /* Build configuration list for PBXNativeTarget "AutoHome iOS Client" */;
+			buildPhases = (
+				6F31AECD1AB606DB00A013AC /* Sources */,
+				6F31AECE1AB606DB00A013AC /* Frameworks */,
+				6F31AECF1AB606DB00A013AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AutoHome iOS Client";
+			productName = "AutoHome iOS Client";
+			productReference = 6F31AED11AB606DB00A013AC /* AutoHome iOS Client.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6F31AEE51AB606DB00A013AC /* AutoHome iOS ClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F31AEF31AB606DB00A013AC /* Build configuration list for PBXNativeTarget "AutoHome iOS ClientTests" */;
+			buildPhases = (
+				6F31AEE21AB606DB00A013AC /* Sources */,
+				6F31AEE31AB606DB00A013AC /* Frameworks */,
+				6F31AEE41AB606DB00A013AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F31AEE81AB606DB00A013AC /* PBXTargetDependency */,
+			);
+			name = "AutoHome iOS ClientTests";
+			productName = "AutoHome iOS ClientTests";
+			productReference = 6F31AEE61AB606DB00A013AC /* AutoHome iOS ClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F31AEC91AB606DB00A013AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = AutoHome;
+				TargetAttributes = {
+					6F31AED01AB606DB00A013AC = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					6F31AEE51AB606DB00A013AC = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 6F31AED01AB606DB00A013AC;
+					};
+				};
+			};
+			buildConfigurationList = 6F31AECC1AB606DB00A013AC /* Build configuration list for PBXProject "AutoHome iOS Client" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6F31AEC81AB606DB00A013AC;
+			productRefGroup = 6F31AED21AB606DB00A013AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F31AED01AB606DB00A013AC /* AutoHome iOS Client */,
+				6F31AEE51AB606DB00A013AC /* AutoHome iOS ClientTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F31AECF1AB606DB00A013AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F31AEDC1AB606DB00A013AC /* Main.storyboard in Resources */,
+				6F31AEE11AB606DB00A013AC /* LaunchScreen.xib in Resources */,
+				6F31AEDE1AB606DB00A013AC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F31AEE41AB606DB00A013AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F31AECD1AB606DB00A013AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F31AED91AB606DB00A013AC /* ViewController.swift in Sources */,
+				6F31AED71AB606DB00A013AC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F31AEE21AB606DB00A013AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F31AEED1AB606DB00A013AC /* AutoHome_iOS_ClientTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F31AEE81AB606DB00A013AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F31AED01AB606DB00A013AC /* AutoHome iOS Client */;
+			targetProxy = 6F31AEE71AB606DB00A013AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6F31AEDA1AB606DB00A013AC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F31AEDB1AB606DB00A013AC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6F31AEDF1AB606DB00A013AC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F31AEE01AB606DB00A013AC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6F31AEEE1AB606DB00A013AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6F31AEEF1AB606DB00A013AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F31AEF11AB606DB00A013AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "AutoHome iOS Client/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6F31AEF21AB606DB00A013AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "AutoHome iOS Client/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6F31AEF41AB606DB00A013AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AutoHome iOS ClientTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoHome iOS Client.app/AutoHome iOS Client";
+			};
+			name = Debug;
+		};
+		6F31AEF51AB606DB00A013AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AutoHome iOS ClientTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoHome iOS Client.app/AutoHome iOS Client";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F31AECC1AB606DB00A013AC /* Build configuration list for PBXProject "AutoHome iOS Client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F31AEEE1AB606DB00A013AC /* Debug */,
+				6F31AEEF1AB606DB00A013AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F31AEF01AB606DB00A013AC /* Build configuration list for PBXNativeTarget "AutoHome iOS Client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F31AEF11AB606DB00A013AC /* Debug */,
+				6F31AEF21AB606DB00A013AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6F31AEF31AB606DB00A013AC /* Build configuration list for PBXNativeTarget "AutoHome iOS ClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F31AEF41AB606DB00A013AC /* Debug */,
+				6F31AEF51AB606DB00A013AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6F31AEC91AB606DB00A013AC /* Project object */;
+}
