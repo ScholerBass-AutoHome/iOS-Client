@@ -15,7 +15,11 @@ class RoomsViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.rooms = [Room(name: "Living Room"), Room(name: "Kitchen")]
+        self.rooms = [Room(name: "Living Room", numApps: 5), Room(name: "Kitchen", numApps: 3)]
+        
+        var inset: UIEdgeInsets
+        inset = UIEdgeInsetsMake(20, 0, 0, 0);
+        self.tableView.contentInset = inset;
     }
     
     override func didReceiveMemoryWarning() {
@@ -34,7 +38,14 @@ class RoomsViewController: UITableViewController {
         room = rooms[indexPath.row]
         
         cell.textLabel?.text = room.name
+        cell.detailTextLabel?.text = String(room.numApps) + " Appliances"
         
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let roomViewController: RoomViewController = RoomViewController()
+        
+        self.presentViewController(roomViewController, animated: true, completion: nil)
     }
 }

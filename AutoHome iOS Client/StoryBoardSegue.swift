@@ -1,5 +1,5 @@
 //
-//  Room.swift
+//  StoryBoardSeque.swift
 //  AutoHome iOS Client
 //
 //  Created by Ben Scholer on 3/15/15.
@@ -7,8 +7,3 @@
 //
 
 import Foundation
-
-struct Room {
-    let name : String
-    let numApps : Int
-}
