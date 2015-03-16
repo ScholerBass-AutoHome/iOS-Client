@@ -205,11 +205,12 @@
             </objects>
             <point key="canvasLocation" x="135" y="1050"/>
         </scene>
-        <!--Rooms View Controller-->
+        <!--Rooms-->
         <scene sceneID="z7l-Oe-wtB">
             <objects>
-                <tableViewController id="qR3-kX-sGs" customClass="RoomsViewController" customModule="AutoHome_iOS_Client" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Rooms" id="qR3-kX-sGs" customClass="RoomsViewController" customModule="AutoHome_iOS_Client" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="D4R-Hz-NP6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -250,16 +251,33 @@
             </objects>
             <point key="canvasLocation" x="447" y="1834.5"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="h1J-ev-gTG">
+            <objects>
+                <viewController id="mVN-jE-Cxe" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NZI-Ss-o6A"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfa-ff-B3v"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6QM-Bb-bU1">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wmE-sh-hsY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="780" y="2538.75"/>
+        </scene>
         <!--Units-->
         <scene sceneID="bmc-GN-uSm">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6ae-nE-yMB" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="4Hz-jH-nnW" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uZr-gV-LCb"/>
                         <viewControllerLayoutGuide type="bottom" id="Qiq-cD-ob9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="JNY-ye-25D">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm a label too, you know..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xew-j3-uW0">
@@ -295,19 +313,20 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Units" id="5Jq-7P-lyY"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ae-nE-yMB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1947" y="2157.75"/>
         </scene>
         <!--Appliances-->
         <scene sceneID="jur-G5-wUI">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ul-xi-cnL" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Zdm-zb-0Et" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RqC-PV-gRI"/>
                         <viewControllerLayoutGuide type="bottom" id="bKU-7C-Nhf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="CCw-Uv-rUR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm a label yo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ru-UH-FEM">
@@ -343,13 +362,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Appliances" id="sVd-1E-n7e"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ul-xi-cnL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1948" y="1510.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="4dp-yn-5E2">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DVN-89-NXH" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController id="APl-N3-oIt" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="ifQ-I6-I4U">
@@ -362,13 +381,13 @@
                         <segue destination="4Hz-jH-nnW" kind="relationship" relationship="viewControllers" id="Ehj-Mf-dYI"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DVN-89-NXH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1130" y="1833"/>
         </scene>
         <!--Register-->
         <scene sceneID="Hoc-yT-Ejv">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jUY-k2-cml" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="Register" id="fWS-Eh-0Sc" customClass="RegisterViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8mx-8E-06p"/>
@@ -503,6 +522,7 @@
                         </variation>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jUY-k2-cml" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="780" y="1050"/>
         </scene>
