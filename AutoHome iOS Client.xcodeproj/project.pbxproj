@@ -20,6 +20,7 @@
 		6F9C083E1AB641EB008A4FBF /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9C083D1AB641EB008A4FBF /* Room.swift */; };
 		6F9C08401AB64C65008A4FBF /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9C083F1AB64C65008A4FBF /* RoomViewController.swift */; };
 		6F9C08421AB653DF008A4FBF /* StoryBoardSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9C08411AB653DF008A4FBF /* StoryBoardSegue.swift */; };
+		6FBBCD231AB7B8C20001E632 /* NewRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBBCD221AB7B8C20001E632 /* NewRoomViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		6F9C083D1AB641EB008A4FBF /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		6F9C083F1AB64C65008A4FBF /* RoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
 		6F9C08411AB653DF008A4FBF /* StoryBoardSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryBoardSegue.swift; sourceTree = "<group>"; };
+		6FBBCD221AB7B8C20001E632 /* NewRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewRoomViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				6F31AEF81AB6285D00A013AC /* RegisterViewController.swift */,
 				6F31AEFA1AB6289400A013AC /* RoomsViewController.swift */,
 				6F9C083F1AB64C65008A4FBF /* RoomViewController.swift */,
+				6FBBCD221AB7B8C20001E632 /* NewRoomViewController.swift */,
 				6F31AED61AB606DB00A013AC /* AppDelegate.swift */,
 				6F31AEDA1AB606DB00A013AC /* Main.storyboard */,
 				6F31AEDD1AB606DB00A013AC /* Images.xcassets */,
@@ -233,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FBBCD231AB7B8C20001E632 /* NewRoomViewController.swift in Sources */,
 				6F31AEF71AB627AD00A013AC /* LoginViewController.swift in Sources */,
 				6F31AED91AB606DB00A013AC /* ViewController.swift in Sources */,
 				6F9C08401AB64C65008A4FBF /* RoomViewController.swift in Sources */,

@@ -24,7 +24,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ACf-lW-amm" kind="presentation" id="PCD-sA-a9f"/>
+                                    <segue destination="ACf-lW-amm" kind="presentation" id="Opc-jH-9gS"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIV-5E-FGW">
@@ -213,8 +213,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" translucent="NO" id="Buz-xG-Ih5">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="Rooms" id="9F7-3d-svQ">
+                                    <barButtonItem key="rightBarButtonItem" systemItem="add" id="3Of-yJ-mdi">
+                                        <connections>
+                                            <segue destination="mVN-jE-Cxe" kind="show" id="TfN-m6-2Kf"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </navigationItem>
+                            </items>
+                        </navigationBar>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RoomCell" textLabel="YoK-Pb-55Y" detailTextLabel="5II-mW-mG1" style="IBUITableViewCellStyleSubtitle" id="d6b-EI-PRQ">
+                            <tableViewCell opaque="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RoomCell" textLabel="YoK-Pb-55Y" detailTextLabel="5II-mW-mG1" style="IBUITableViewCellStyleSubtitle" id="d6b-EI-PRQ">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="d6b-EI-PRQ" id="QIm-p3-v7e">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -222,7 +235,7 @@
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YoK-Pb-55Y">
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                             <variation key="heightClass=regular">
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -231,7 +244,7 @@
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5II-mW-mG1">
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                             <variation key="heightClass=regular">
                                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
@@ -251,10 +264,10 @@
             </objects>
             <point key="canvasLocation" x="447" y="1834.5"/>
         </scene>
-        <!--View Controller-->
+        <!--New Room View Controller-->
         <scene sceneID="h1J-ev-gTG">
             <objects>
-                <viewController id="mVN-jE-Cxe" sceneMemberID="viewController">
+                <viewController id="mVN-jE-Cxe" customClass="NewRoomViewController" customModule="AutoHome_iOS_Client" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NZI-Ss-o6A"/>
                         <viewControllerLayoutGuide type="bottom" id="wfa-ff-B3v"/>
@@ -262,12 +275,78 @@
                     <view key="view" contentMode="scaleToFill" id="6QM-Bb-bU1">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Room" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0i0-p0-9S0">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Room Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WTZ-yW-IMZ">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXh-gu-3ai">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Create">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="qR3-kX-sGs" kind="show" id="S2i-DM-nx5"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SXh-gu-3ai" firstAttribute="top" secondItem="WTZ-yW-IMZ" secondAttribute="bottom" constant="8" id="7ra-mp-dhF"/>
+                            <constraint firstAttribute="centerX" secondItem="SXh-gu-3ai" secondAttribute="centerX" id="AAS-cq-7FB"/>
+                            <constraint firstItem="WTZ-yW-IMZ" firstAttribute="leading" secondItem="6QM-Bb-bU1" secondAttribute="leadingMargin" id="GrT-qs-hbz"/>
+                            <constraint firstItem="WTZ-yW-IMZ" firstAttribute="top" secondItem="0i0-p0-9S0" secondAttribute="bottom" constant="8" id="W0w-h8-7Gk"/>
+                            <constraint firstAttribute="centerX" secondItem="WTZ-yW-IMZ" secondAttribute="centerX" id="bg9-NS-E8t"/>
+                            <constraint firstItem="0i0-p0-9S0" firstAttribute="top" secondItem="NZI-Ss-o6A" secondAttribute="bottom" id="jGE-SI-jM1"/>
+                            <constraint firstAttribute="centerX" secondItem="0i0-p0-9S0" secondAttribute="centerX" id="jTw-hN-1vP"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="0i0-p0-9S0"/>
+                                <exclude reference="WTZ-yW-IMZ"/>
+                                <exclude reference="SXh-gu-3ai"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="jGE-SI-jM1"/>
+                                <exclude reference="jTw-hN-1vP"/>
+                                <exclude reference="GrT-qs-hbz"/>
+                                <exclude reference="W0w-h8-7Gk"/>
+                                <exclude reference="bg9-NS-E8t"/>
+                                <exclude reference="7ra-mp-dhF"/>
+                                <exclude reference="AAS-cq-7FB"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="subviews">
+                                <include reference="0i0-p0-9S0"/>
+                                <include reference="WTZ-yW-IMZ"/>
+                                <include reference="SXh-gu-3ai"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="jGE-SI-jM1"/>
+                                <include reference="jTw-hN-1vP"/>
+                                <include reference="GrT-qs-hbz"/>
+                                <include reference="W0w-h8-7Gk"/>
+                                <include reference="bg9-NS-E8t"/>
+                                <include reference="7ra-mp-dhF"/>
+                                <include reference="AAS-cq-7FB"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="roomName" destination="WTZ-yW-IMZ" id="Fgb-y3-ucX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wmE-sh-hsY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="780" y="2538.75"/>
+            <point key="canvasLocation" x="780" y="2570.25"/>
         </scene>
         <!--Units-->
         <scene sceneID="bmc-GN-uSm">
@@ -284,7 +363,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm a label too, you know..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xew-j3-uW0">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -333,7 +412,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm a label yo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ru-UH-FEM">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -529,6 +608,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ujU-Ql-ibA"/>
+        <segue reference="S2i-DM-nx5"/>
     </inferredMetricsTieBreakers>
 </document>
