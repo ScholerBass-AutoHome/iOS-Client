@@ -341,7 +341,7 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="roomName" destination="WTZ-yW-IMZ" id="Fgb-y3-ucX"/>
+                        <outlet property="roomNameField" destination="WTZ-yW-IMZ" id="ULM-8o-nHi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wmE-sh-hsY" userLabel="First Responder" sceneMemberID="firstResponder"/>

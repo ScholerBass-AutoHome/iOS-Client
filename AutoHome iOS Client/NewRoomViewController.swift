@@ -10,7 +10,7 @@ import UIKit
 
 class NewRoomViewController: UIViewController {
     
-    @IBOutlet weak var roomName: UITextField!
+    @IBOutlet weak var roomNameField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +23,7 @@ class NewRoomViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if segue.identifier == "secondScreen" {
             var nextController = segue.destinationViewController as RoomsViewController
-            nextController.toPass = roomName.text
+            nextController.toPass = roomNameField.text
         }
     }
 }

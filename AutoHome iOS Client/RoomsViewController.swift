@@ -11,16 +11,23 @@ import UIKit
 class RoomsViewController: UITableViewController {
     
     var rooms = [Room]()
-    var toPass:String = ""
+    var toPass:String = " "
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        println("Called viewDidLoad function")
+        println("\(toPass)")
         
         self.rooms = [Room(name: "Living Room", numApps: 5), Room(name: "Kitchen", numApps: 3)]
         
         var inset: UIEdgeInsets
         inset = UIEdgeInsetsMake(20, 0, 0, 0);
         self.tableView.contentInset = inset;
+        
+        if !toPass.isEmpty {
+            rooms.append(Room(name: toPass, numApps: 0))
+            println("Added room name to array")
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -36,7 +43,11 @@ class RoomsViewController: UITableViewController {
         
         var room: Room
         
+        //        if toPass.isEmpty {
         room = rooms[indexPath.row]
+        //        } else {
+        //            room = Room(name: toPass, numApps: 0)
+        //        }
         
         cell.textLabel?.text = room.name
         cell.detailTextLabel?.text = String(room.numApps) + " Appliances"
