@@ -11,7 +11,8 @@ import UIKit
 class NewRoomViewController: UIViewController {
     
     @IBOutlet weak var roomNameField: UITextField!
-    var rooms = [Room]()
+    
+    var rooms: [Room] = [Room]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
