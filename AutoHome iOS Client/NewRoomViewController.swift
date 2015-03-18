@@ -11,6 +11,7 @@ import UIKit
 class NewRoomViewController: UIViewController {
     
     @IBOutlet weak var roomNameField: UITextField!
+    var rooms = [Room]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +22,11 @@ class NewRoomViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-            var nextController = segue.destinationViewController as RoomsViewController
-            nextController.toPass = roomNameField.text
+        let roomName : String = roomNameField.text
+        
+        self.rooms.append(Room(name: roomName, numApps: 0))
+        var svc = segue.destinationViewController as RoomsViewController
+        
+        svc.rooms = rooms
     }
 }

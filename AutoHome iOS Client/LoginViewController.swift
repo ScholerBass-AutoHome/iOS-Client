@@ -6,4 +6,23 @@
 //  Copyright (c) 2015 AutoHome. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class LoginViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var rooms = [Room]()
+        
+        var svc = segue.destinationViewController as RoomsViewController
+        
+        svc.rooms = rooms
+    }
+}

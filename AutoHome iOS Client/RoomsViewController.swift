@@ -11,23 +11,13 @@ import UIKit
 class RoomsViewController: UITableViewController {
     
     var rooms = [Room]()
-    var toPass = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        println("Called viewDidLoad function")
-        println("\(toPass)")
-        
-        self.rooms = [Room(name: "Living Room", numApps: 5), Room(name: "Kitchen", numApps: 3)]
         
         var inset: UIEdgeInsets
         inset = UIEdgeInsetsMake(20, 0, 0, 0);
         self.tableView.contentInset = inset;
-        
-        if !toPass.isEmpty {
-            rooms.append(Room(name: toPass, numApps: 0))
-            println("Added room name to array")
-        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -60,4 +50,15 @@ class RoomsViewController: UITableViewController {
         
         self.presentViewController(roomViewController, animated: true, completion: nil)
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var newRoom = segue.destinationViewController as NewRoomViewController
+        
+        newRoom.rooms = self.rooms
+    }
+    
+//    func saveRooms(seque: UIStoryboardSegue) {
+//        userDefaults.setValue(rooms, forKey: "rooms")
+//    }
+
 }
