@@ -20,10 +20,8 @@ class NewRoomViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        if segue.identifier == "secondScreen" {
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
             var nextController = segue.destinationViewController as RoomsViewController
             nextController.toPass = roomNameField.text
-        }
     }
 }

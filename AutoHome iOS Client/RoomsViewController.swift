@@ -11,7 +11,7 @@ import UIKit
 class RoomsViewController: UITableViewController {
     
     var rooms = [Room]()
-    var toPass:String = " "
+    var toPass = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
