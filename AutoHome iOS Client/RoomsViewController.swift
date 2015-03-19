@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 AutoHome. All rights reserved.
 //
 
-import
+import Foundation
 import UIKit
 
 class RoomsViewController: UITableViewController {
@@ -50,13 +50,9 @@ class RoomsViewController: UITableViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let defaults = NSUserDefaults.standardUserDefaults()
-        var key = "roomsArray"
+        let key = "roomsArray"
         
         defaults.setObject(rooms, forKey: key)
-        
-        var newRoom = segue.destinationViewController as NewRoomViewController
-        
-        newRoom.rooms = self.rooms
     }
     
 //    func saveRooms(seque: UIStoryboardSegue) {

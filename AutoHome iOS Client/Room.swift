@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Room {
-    let name : String
-    let numApps : Int
+class Room {
+    let name : String = ""
+    let numApps : Int = 0
 }

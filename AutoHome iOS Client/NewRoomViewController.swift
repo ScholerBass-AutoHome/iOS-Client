@@ -23,11 +23,9 @@ class NewRoomViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let roomName : String = roomNameField.text
-        
-        self.rooms.append(Room(name: roomName, numApps: 0))
-        var svc = segue.destinationViewController as RoomsViewController
-        
-        svc.rooms = rooms
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let key = "roomsArray"
+
+        rooms = defaults.objectForKey(key)
     }
 }
