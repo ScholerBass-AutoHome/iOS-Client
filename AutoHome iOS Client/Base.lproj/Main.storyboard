@@ -252,6 +252,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="2kq-Tv-W0y" kind="show" id="P2g-iY-ekC"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -349,121 +352,93 @@
             <point key="canvasLocation" x="780" y="2570.25"/>
         </scene>
         <!--Units-->
-        <scene sceneID="bmc-GN-uSm">
+        <scene sceneID="lKg-8J-2Cf">
             <objects>
-                <viewController id="4Hz-jH-nnW" sceneMemberID="viewController">
+                <viewController id="lbc-Ka-sTY" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="uZr-gV-LCb"/>
-                        <viewControllerLayoutGuide type="bottom" id="Qiq-cD-ob9"/>
+                        <viewControllerLayoutGuide type="top" id="rN9-XZ-vo4"/>
+                        <viewControllerLayoutGuide type="bottom" id="FmF-s3-Mal"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="JNY-ye-25D">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="bDc-aR-sIk">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm a label too, you know..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xew-j3-uW0">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="centerY" secondItem="xew-j3-uW0" secondAttribute="centerY" constant="0.5" id="9ue-XJ-kGG"/>
-                            <constraint firstAttribute="centerX" secondItem="xew-j3-uW0" secondAttribute="centerX" id="t6r-Rv-NjL"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="xew-j3-uW0"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="9ue-XJ-kGG"/>
-                                <exclude reference="t6r-Rv-NjL"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular">
-                            <mask key="subviews">
-                                <include reference="xew-j3-uW0"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="9ue-XJ-kGG"/>
-                                <include reference="t6r-Rv-NjL"/>
-                            </mask>
-                        </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Units" id="5Jq-7P-lyY"/>
+                    <tabBarItem key="tabBarItem" title="Units" id="qWM-aC-Yc5"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6ae-nE-yMB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ggo-33-Hkg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1947" y="2157.75"/>
+            <point key="canvasLocation" x="2013" y="2157.75"/>
         </scene>
         <!--Appliances-->
-        <scene sceneID="jur-G5-wUI">
+        <scene sceneID="ypr-ec-fJx">
             <objects>
-                <viewController id="Zdm-zb-0Et" sceneMemberID="viewController">
+                <viewController id="28n-9s-Jzx" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="RqC-PV-gRI"/>
-                        <viewControllerLayoutGuide type="bottom" id="bKU-7C-Nhf"/>
+                        <viewControllerLayoutGuide type="top" id="2wO-uh-ItU"/>
+                        <viewControllerLayoutGuide type="bottom" id="qf0-CZ-6ru"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="CCw-Uv-rUR">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="GZF-vd-Ub2">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm a label yo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ru-UH-FEM">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gFr-lX-rWu">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="oGT-Wb-2VY">
+                                    <size key="itemSize" width="0.0" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="KTR-cb-rFQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="20" width="600" height="731"/>
+                                </variation>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="centerX" secondItem="8ru-UH-FEM" secondAttribute="centerX" constant="-0.5" id="PEP-xM-fPc"/>
-                            <constraint firstAttribute="centerY" secondItem="8ru-UH-FEM" secondAttribute="centerY" constant="0.5" id="SDz-eh-l0N"/>
-                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="8ru-UH-FEM"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="PEP-xM-fPc"/>
-                                <exclude reference="SDz-eh-l0N"/>
+                                <exclude reference="gFr-lX-rWu"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
                             <mask key="subviews">
-                                <include reference="8ru-UH-FEM"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="PEP-xM-fPc"/>
-                                <include reference="SDz-eh-l0N"/>
+                                <include reference="gFr-lX-rWu"/>
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Appliances" id="sVd-1E-n7e"/>
+                    <tabBarItem key="tabBarItem" title="Appliances" id="cCA-wM-10v"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ul-xi-cnL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5jy-OJ-zQG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1948" y="1510.5"/>
+            <point key="canvasLocation" x="2014" y="1509.75"/>
         </scene>
         <!--Tab Bar Controller-->
-        <scene sceneID="4dp-yn-5E2">
+        <scene sceneID="3ZY-nv-ife">
             <objects>
-                <tabBarController id="APl-N3-oIt" sceneMemberID="viewController">
+                <tabBarController id="2kq-Tv-W0y" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="ifQ-I6-I4U">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="6vM-eE-gip">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Zdm-zb-0Et" kind="relationship" relationship="viewControllers" id="L92-cg-6p3"/>
-                        <segue destination="4Hz-jH-nnW" kind="relationship" relationship="viewControllers" id="Ehj-Mf-dYI"/>
+                        <segue destination="28n-9s-Jzx" kind="relationship" relationship="viewControllers" id="UMb-h3-2Be"/>
+                        <segue destination="lbc-Ka-sTY" kind="relationship" relationship="viewControllers" id="9hG-Ge-GMF"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DVN-89-NXH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g3B-AH-mgb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1130" y="1833"/>
+            <point key="canvasLocation" x="1196" y="1833"/>
         </scene>
         <!--Register-->
         <scene sceneID="Hoc-yT-Ejv">
@@ -608,6 +583,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="S2i-DM-nx5"/>
+        <segue reference="ujU-Ql-ibA"/>
     </inferredMetricsTieBreakers>
 </document>

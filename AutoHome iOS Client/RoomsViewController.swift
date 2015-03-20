@@ -15,6 +15,8 @@ class RoomsViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        rooms.append(Room(name: "Living Room", numApps: 3))
+        
         var inset: UIEdgeInsets
         inset = UIEdgeInsetsMake(20, 0, 0, 0);
         self.tableView.contentInset = inset;
@@ -45,16 +47,16 @@ class RoomsViewController: UITableViewController {
         return cell
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let roomViewController: RoomViewController = RoomViewController()
-        
-        self.presentViewController(roomViewController, animated: true, completion: nil)
-    }
+//    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//        let roomViewController: RoomViewController = RoomViewController()
+//        
+//        self.presentViewController(roomViewController, animated: true, completion: nil)
+//    }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        var newRoom = segue.destinationViewController as NewRoomViewController
+//        var newRoom = segue.destinationViewController as NewRoomViewController
         
-        newRoom.rooms = self.rooms
+//        newRoom.rooms = self.rooms
     }
     
 //    func saveRooms(seque: UIStoryboardSegue) {
