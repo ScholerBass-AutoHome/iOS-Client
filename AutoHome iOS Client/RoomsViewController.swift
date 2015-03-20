@@ -6,12 +6,11 @@
 //  Copyright (c) 2015 AutoHome. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 class RoomsViewController: UITableViewController {
     
-    var rooms: [Room] = [Room]()
+    var rooms = [Room]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +33,11 @@ class RoomsViewController: UITableViewController {
         
         var room: Room
         
+        //        if toPass.isEmpty {
         room = rooms[indexPath.row]
+        //        } else {
+        //            room = Room(name: toPass, numApps: 0)
+        //        }
         
         cell.textLabel?.text = room.name
         cell.detailTextLabel?.text = String(room.numApps) + " Appliances"
@@ -49,10 +52,9 @@ class RoomsViewController: UITableViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let defaults = NSUserDefaults.standardUserDefaults()
-        let key = "roomsArray"
+        var newRoom = segue.destinationViewController as NewRoomViewController
         
-        defaults.setObject(rooms, forKey: key)
+        newRoom.rooms = self.rooms
     }
     
 //    func saveRooms(seque: UIStoryboardSegue) {

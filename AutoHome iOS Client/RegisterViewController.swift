@@ -19,7 +19,7 @@ class RegisterViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        var rooms: [Room] = [Room]()
+        var rooms = [Room]()
         
         var svc = segue.destinationViewController as RoomsViewController
         
